@@ -35,6 +35,7 @@ body {
 }
 
 .card button {
+    text-transform: none;
     margin-top: 20px;
     padding: 10px;
     background-color: coral;

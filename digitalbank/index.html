@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Digitalbank</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .nav-links {
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 10px 0;
+                }
+                .hero {
+                    flex-direction: column;
+                    padding: 40px 20px;
+                }
+                .hero-text,
+                .hero-image {
+                    max-width: 100%;
+                    text-align: center;
+                }
+                .feature-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo">Digitalbank</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Request Invite</a>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Next generation digital banking</h1>
+                <p>
+                    Take your financial life online. Your Digitalbank account
+                    will be a one-stop-shop for spending, saving, budgeting,
+                    investing, and much more.
+                </p>
+                <a href="#" class="btn">Request Invite</a>
+            </div>
+            <div class="hero-image">
+                <img
+                    src="./digitalbank-landing-page-master/images/image-mockups.png"
+                    alt="App Preview"
+                />
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why choose Digitalbank?</h2>
+            <p>
+                We leverage Open Banking to turn your bank account into your
+                financial hub. Control your finances like never before.
+            </p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Online Banking</h3>
+                    <p>
+                        Modern web and mobile apps to manage your finances
+                        anywhere.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3>Simple Budgeting</h3>
+                    <p>
+                        Track where your money goes and stay on budget easily.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Onboarding</h3>
+                    <p>
+                        Open your account in minutes and start using it right
+                        away.
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3>Open API</h3>
+                    <p>Manage savings, investments, and more from one place.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; Digitalbank. All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
