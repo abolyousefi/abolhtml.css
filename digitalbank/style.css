@@ -31,11 +31,12 @@ body {
 }
 
 .btn {
-    background: #32d68c;
+    background: #08a35e;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
+    text-wrap: wrap;
     font-weight: bold;
 }
 
@@ -45,10 +46,12 @@ body {
     justify-content: space-between;
     padding: 80px 50px;
     background: #f0f2f5;
+    flex-wrap: wrap;
 }
 
 .hero-text {
-    max-width: 50%;
+    max-width: 25%;
+    margin: 10px;
 }
 
 .hero-text h1 {
@@ -58,11 +61,13 @@ body {
 
 .hero-text p {
     font-size: 18px;
+
     line-height: 1.6;
 }
 
 .hero-image img {
     max-width: 300px;
+    margin: 10px;
 }
 
 .features {
@@ -89,4 +94,32 @@ body {
     padding: 20px;
     background: #1c1c1c;
     color: white;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .hero-text,
+    .hero-image {
+        max-width: 100%;
+        text-align: center;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
