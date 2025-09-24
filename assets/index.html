@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/index.css" />
+    </head>
+    <body>
+        <section class="main-section">
+            <div class="page-container">
+                <header>
+                    <div class="header-container">
+                        <div class="header-sign">
+                            <a class="sign-tag" href="#">
+                                <p class="sign-tag-p">ورود / ثبت نام</p>
+                                <i class="fa-solid fa-user i-person"></i>
+                            </a>
+                        </div>
+
+                        <div class="header-links">
+                            <a class="header-link" href="./assets/contact.html"
+                                >ارتباط باما</a
+                            >
+                            <a class="header-link" href="#"
+                                >درباره‌ <span>‌بنیاد مهربانی</span></a
+                            >
+                            <a class="header-link" href="#">آمار ها</a>
+                            <a class="header-link" href="#">نیازمندی ها</a>
+                            <a class="header-link" href="#">حمایت ها</a>
+                            <a class="header-link" href="./index.html"
+                                >صفحه اصلی</a
+                            >
+                        </div>
+
+                        <div class="header-logo">
+                            <div class="logo-text">
+                                <p class="header-p-light">
+                                    بنیاد
+                                    <span class="header-span">مهربانی</span>
+                                </p>
+                                <p class="header-p">
+                                    حساب 100 امام (ره) - بنیاد مسکن انقلاب
+                                    اسلامی
+                                </p>
+                            </div>
+                            <img
+                                class="header-logo-img"
+                                src="./assets/images/Logo.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- نوار بالا فقط با دکمه همبرگر -->
+                        <nav class="navbar hamburger">
+                            <div class="container-fluid">
+                                <!-- آیکون همبرگر سمت چپ -->
+                                <button
+                                    class="navbar-toggler ms-auto hamburger-btn"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#menuOffcanvas"
+                                    aria-controls="menuOffcanvas"
+                                >
+                                    <!-- <span class="navbar-toggler-icon"></span> -->
+                                    <i class="fa-solid fa-bars i-hamburger"></i>
+                                </button>
+                            </div>
+                        </nav>
+
+                        <!-- منوی Offcanvas -->
+                        <div
+                            class="offcanvas offcanvas-end"
+                            tabindex="-1"
+                            id="menuOffcanvas"
+                            aria-labelledby="menuOffcanvasLabel"
+                        >
+                            <div class="offcanvas-header">
+                                <button
+                                    type="button"
+                                    class="btn-close text-reset btn-close-offcanvas"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="بستن"
+                                ></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            href="./index.html"
+                                            >صفحه اصلی</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >حمایت ها</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >نیازمندی ها</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">آمار ها</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >درباره‌
+                                            <span class="nav-yellow"
+                                                >‌بنیاد مهربانی</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="./assets/contact.html"
+                                            >ارتباط باما</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="first-page-main">
+                    <img
+                        class="hero-img"
+                        src="./assets/images/Hero Image.png"
+                        alt=""
+                    />
+                    <img
+                        class="hero-img-mobile"
+                        src="./assets/images/Hero Image-mobile.png"
+                        alt=""
+                    />
+                    <div class="first-page-text">
+                        <img
+                            class="leaf-img"
+                            src="./assets/images/leaf.png"
+                            alt=""
+                        />
+                        <img
+                            class="leaf-img-mobile"
+                            src="./assets/images/leaf-mobile.png"
+                            alt=""
+                        />
+                        <p class="first-page-text-title">
+                            بنیاد مهربانی در کنار شماست تا
+                            <span>خنده‌ای</span> ساخته شود
+                        </p>
+                        <p class="first-page-text-p">
+                            مؤسسه خیریه بنیاد مهربانی از سال ۱۳۷۰ و با شماره ثبت
+                            2565 فعالیت خود را در قـالب یک سـازمان دولتی با
+                            انگیزه والای کمک به نیازمندان در زمینه های خرید مسکن
+                            ، تجهیز مسکن ، تعمیر مسکن ، تجهیز مسکن و ترهین مسکن
+                            آغاز کرده است. در طـول ۳۰ سال فعـالیت، بنیاد مهربانی
+                            بـا بهره‌گیری از کمک‌های انسان دوستانه مردم نیکوکار
+                            و همراهی مدیران نیک اندیش و تلاش پیگیر نیروهای
+                            داوطلب...
+                        </p>
+                        <div class="first-page-text-bot">
+                            <div>
+                                <a class="first-page-bot-link" href="#">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <p class="first-page-bot-link-p">
+                                        حمایت فوری
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="first-page-bot-modal">
+                                <button
+                                    type="button"
+                                    class="btn btn-first-page-modal"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                                >
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </button>
+
+                                <p>روند کار ما</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-between">
+                        <h5 class="modal-title">
+                            روند کار <span>بنیاد مهربانی</span>
+                        </h5>
+                        <div>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <img src="./assets/images/modal.jpg" alt="" />
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است، و برای شرایط فعلی
+                                تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                                بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در
+                                شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                                جامعه و متخصصان را می طلبد، تا با نرم افزارها
+                                شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                                طراحان خلاقی.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="recent-requirement-body">
+            <div class="recent-requirement">
+                <div class="recent-header">
+                    <div class="recent-title">
+                        <img
+                            class="leaf-img2"
+                            src="./assets/images/leaf2.png"
+                            alt=""
+                        />
+                        <p>نیازمندی های <span>اخیر</span></p>
+                        <p class="recent-title-p">
+                            همه نیاز ها را ببینید ؛ به هر نیازی ،در هر جای کشور
+                            و هرمقداری که می خواهید کمک کنید.
+                        </p>
+                    </div>
+                    <button class="recent-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        مشاهده همه
+                    </button>
+                </div>
+                <div class="row recent-body g-4">
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="left-card">
+                                <img
+                                    class="card-img"
+                                    src="./assets/images/card2.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="card-img-mobile"
+                                    src="./assets/images/card2-mobile.png"
+                                    alt=""
+                                />
+                                <button class="card-btn">
+                                    <i class="fa-solid fa-users"></i>
+                                    من هم حمایت میکنم
+                                </button>
+                            </div>
+                            <div class="right-card">
+                                <div class="right-card-top">
+                                    <div class="right-card-top-title">
+                                        <div class="card-title">
+                                            <img
+                                                src="./assets/images/new-releases.png"
+                                                alt=""
+                                            />
+                                            اجاره مسکن
+                                        </div>
+                                        <div class="card-title-red">فوری</div>
+                                    </div>
+                                    <svg class="gauge" viewBox="0 0 200 100">
+                                        <!-- نیم‌دایره خاکستری -->
+                                        <path
+                                            d="M10,100 A90,90 0 0,1 190,100"
+                                            class="gauge-bg"
+                                        />
+
+                                        <!-- نیم‌دایره سبز -->
+                                        <path
+                                            d="M190,100 A90,90 0 0,0 10,100"
+                                            class="gauge-value"
+                                        />
+
+                                        <!-- متن درصد داخل نیم‌دایره -->
+                                        <text
+                                            x="100"
+                                            y="90"
+                                            text-anchor="middle"
+                                            class="gauge-text"
+                                        >
+                                            70%
+                                        </text>
+                                    </svg>
+                                </div>
+                                <p class="card-title-p">خانواده ای در شیراز</p>
+                                <p class="card-title-p2">
+                                    جمع آوری کمک های مالی جهت اجاره مسکن برای
+                                    خانواده ای در شیراز با دو فرزند...
+                                </p>
+                                <div class="right-card-bot">
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div>
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="left-card">
+                                <img
+                                    class="card-img"
+                                    src="./assets/images/card2.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="card-img-mobile"
+                                    src="./assets/images/card2-mobile.png"
+                                    alt=""
+                                />
+                                <button class="card-btn">
+                                    <i class="fa-solid fa-users"></i>
+                                    من هم حمایت میکنم
+                                </button>
+                            </div>
+                            <div class="right-card">
+                                <div class="right-card-top">
+                                    <div class="right-card-top-title">
+                                        <div class="card-title">
+                                            <img
+                                                src="./assets/images/new-releases.png"
+                                                alt=""
+                                            />
+                                            اجاره مسکن
+                                        </div>
+                                        <div class="card-title-red">فوری</div>
+                                    </div>
+                                    <svg class="gauge" viewBox="0 0 200 100">
+                                        <!-- نیم‌دایره خاکستری -->
+                                        <path
+                                            d="M10,100 A90,90 0 0,1 190,100"
+                                            class="gauge-bg"
+                                        />
+
+                                        <!-- نیم‌دایره سبز -->
+                                        <path
+                                            d="M190,100 A90,90 0 0,0 10,100"
+                                            class="gauge-value"
+                                        />
+
+                                        <!-- متن درصد داخل نیم‌دایره -->
+                                        <text
+                                            x="100"
+                                            y="90"
+                                            text-anchor="middle"
+                                            class="gauge-text"
+                                        >
+                                            70%
+                                        </text>
+                                    </svg>
+                                </div>
+                                <p class="card-title-p">خانواده ای در شیراز</p>
+                                <p class="card-title-p2">
+                                    جمع آوری کمک های مالی جهت اجاره مسکن برای
+                                    خانواده ای در شیراز با دو فرزند...
+                                </p>
+                                <div class="right-card-bot">
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div>
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="left-card">
+                                <img
+                                    class="card-img"
+                                    src="./assets/images/card2.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="card-img-mobile"
+                                    src="./assets/images/card2-mobile.png"
+                                    alt=""
+                                />
+                                <button class="card-btn">
+                                    <i class="fa-solid fa-users"></i>
+                                    من هم حمایت میکنم
+                                </button>
+                            </div>
+                            <div class="right-card">
+                                <div class="right-card-top">
+                                    <div class="right-card-top-title">
+                                        <div class="card-title">
+                                            <img
+                                                src="./assets/images/new-releases.png"
+                                                alt=""
+                                            />
+                                            اجاره مسکن
+                                        </div>
+                                        <div class="card-title-red">فوری</div>
+                                    </div>
+                                    <svg class="gauge" viewBox="0 0 200 100">
+                                        <!-- نیم‌دایره خاکستری -->
+                                        <path
+                                            d="M10,100 A90,90 0 0,1 190,100"
+                                            class="gauge-bg"
+                                        />
+
+                                        <!-- نیم‌دایره سبز -->
+                                        <path
+                                            d="M190,100 A90,90 0 0,0 10,100"
+                                            class="gauge-value"
+                                        />
+
+                                        <!-- متن درصد داخل نیم‌دایره -->
+                                        <text
+                                            x="100"
+                                            y="90"
+                                            text-anchor="middle"
+                                            class="gauge-text"
+                                        >
+                                            70%
+                                        </text>
+                                    </svg>
+                                </div>
+                                <p class="card-title-p">خانواده ای در شیراز</p>
+                                <p class="card-title-p2">
+                                    جمع آوری کمک های مالی جهت اجاره مسکن برای
+                                    خانواده ای در شیراز با دو فرزند...
+                                </p>
+                                <div class="right-card-bot">
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div>
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="left-card">
+                                <img
+                                    class="card-img"
+                                    src="./assets/images/card2.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="card-img-mobile"
+                                    src="./assets/images/card2-mobile.png"
+                                    alt=""
+                                />
+                                <button class="card-btn">
+                                    <i class="fa-solid fa-users"></i>
+                                    من هم حمایت میکنم
+                                </button>
+                            </div>
+                            <div class="right-card">
+                                <div class="right-card-top">
+                                    <div class="right-card-top-title">
+                                        <div class="card-title">
+                                            <img
+                                                src="./assets/images/new-releases.png"
+                                                alt=""
+                                            />
+                                            اجاره مسکن
+                                        </div>
+                                        <div class="card-title-red">فوری</div>
+                                    </div>
+                                    <svg class="gauge" viewBox="0 0 200 100">
+                                        <!-- نیم‌دایره خاکستری -->
+                                        <path
+                                            d="M10,100 A90,90 0 0,1 190,100"
+                                            class="gauge-bg"
+                                        />
+
+                                        <!-- نیم‌دایره سبز -->
+                                        <path
+                                            d="M190,100 A90,90 0 0,0 10,100"
+                                            class="gauge-value"
+                                        />
+
+                                        <!-- متن درصد داخل نیم‌دایره -->
+                                        <text
+                                            x="100"
+                                            y="90"
+                                            text-anchor="middle"
+                                            class="gauge-text"
+                                        >
+                                            70%
+                                        </text>
+                                    </svg>
+                                </div>
+                                <p class="card-title-p">خانواده ای در شیراز</p>
+                                <p class="card-title-p2">
+                                    جمع آوری کمک های مالی جهت اجاره مسکن برای
+                                    خانواده ای در شیراز با دو فرزند...
+                                </p>
+                                <div class="right-card-bot">
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div class="right-card-bot-each">
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                    <div>
+                                        جمع آوری شده
+                                        <p>
+                                            300,000
+                                            <img
+                                                src="./assets/images/toman.png"
+                                                alt=""
+                                            />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-btn-bot-div">
+                    <button class="recent-btn-bot">
+                        مشاهده همه
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="memorandums-body">
+            <div class="memorandums">
+                <img class="leaf-img2" src="./assets/images/leaf2.png" alt="" />
+                <div class="swiper memorandums-content">
+                    <!-- Additional required wrapper -->
+
+                    <div class="memorandums-header">
+                        <div class="recent-title">
+                            <p>نیازمندی های <span>اخیر</span></p>
+                            <p class="recent-title-p">
+                                همه نیاز ها را ببینید ؛ به هر نیازی ،در هر جای
+                                کشور و هرمقداری که می خواهید کمک کنید.
+                            </p>
+                        </div>
+                        <div class="memorandums-btn">
+                            <button class="btn btn-success btn-next">
+                                <img
+                                    src="./assets/images/keyboard-arrow-right.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn btn-prev">
+                                <img
+                                    src="./assets/images/keyboard-arrow-left.png"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper3.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper1.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper2.png" alt="" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-d">
+                            <img src="./assets/images/swiper3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="memorandums-bot">
+                        <div class="memorandums-btn-bot">
+                            <button class="btn btn-success btn-next">
+                                <img
+                                    src="./assets/images/keyboard-arrow-right.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn btn-prev">
+                                <img
+                                    src="./assets/images/keyboard-arrow-left.png"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-process-body">
+            <div class="work-process">
+                <div class="work-process-bg">
+                    <div class="row work-process-row">
+                        <div
+                            class="col-lg-3 col-6 d-flex justify-content-center work-process-col"
+                        >
+                            <div class="word-process-carts">
+                                <img
+                                    src="./assets/images/work-process-carts.png"
+                                    alt=""
+                                />
+                                <div class="word-process-carts-content">
+                                    <div>
+                                        18,000<i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <p>پروژه در حال اجرا</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 col-6 d-flex justify-content-center work-process-col"
+                        >
+                            <div class="word-process-carts">
+                                <img
+                                    src="./assets/images/work-process-carts.png"
+                                    alt=""
+                                />
+                                <div class="word-process-carts-content">
+                                    <div>
+                                        18,000<i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <p>پروژه در حال اجرا</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 col-6 mt-lg-0 mt-5 d-flex justify-content-center work-process-col"
+                        >
+                            <div class="word-process-carts">
+                                <img
+                                    src="./assets/images/work-process-carts.png"
+                                    alt=""
+                                />
+                                <div class="word-process-carts-content">
+                                    <div>
+                                        18,000<i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <p>پروژه در حال اجرا</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-3 col-6 mt-lg-0 mt-5 d-flex justify-content-center work-process-col"
+                        >
+                            <div class="word-process-carts">
+                                <img
+                                    src="./assets/images/work-process-carts.png"
+                                    alt=""
+                                />
+                                <div class="word-process-carts-content">
+                                    <div>
+                                        18,000<i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <p>پروژه در حال اجرا</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-bg">
+                <div class="footrt-top">
+                    <div class="footrt-top-right">
+                        <img
+                            class="footer-logo"
+                            src="./assets/images/Logo-footer.png"
+                            alt=""
+                        />
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                            متون بلکه روزنامه و مجله در ستون .
+                        </p>
+                        <div>
+                            <img
+                                src="./assets/images/footer-Icon (4).png"
+                                alt=""
+                            />
+                            <img
+                                src="./assets/images/footer-Icon (3).png"
+                                alt=""
+                            />
+                            <img
+                                src="./assets/images/footer-Icon (2).png"
+                                alt=""
+                            />
+                            <img
+                                src="./assets/images/footer-Icon (1).png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="footrt-center">
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">بنیاد مهربانی</p>
+                            <p class="footrt-top-center-p">
+                                <a href="./index.html">صفحه اصلی</a>
+                            </p>
+                            <p class="footrt-top-center-p">
+                                <a href="./assets/news.html">اخبار</a>
+                            </p>
+                            <p class="footrt-top-center-p">قوانین و مقررات</p>
+                            <p class="footrt-top-center-p">درباره ما</p>
+                            <p class="footrt-top-center-p">
+                                <a href="#">ارتباط با ما</a>
+                            </p>
+                        </div>
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">
+                                دسترسی های سریع
+                            </p>
+                            <p class="footrt-top-center-p">حمایت های فوری</p>
+                            <p class="footrt-top-center-p">حوادث غیرمرتبطه</p>
+                            <p class="footrt-top-center-p">مشارکت های مردمی</p>
+                            <p class="footrt-top-center-p">
+                                کمک به بنیاد مهربانی
+                            </p>
+                            <p class="footrt-top-center-p">ثبت شکایت</p>
+                        </div>
+                    </div>
+                    <div class="footrt-top-left">
+                        <p class="footrt-top-center-title">به ما بپیوندید</p>
+                        <div class="footrt-top-left-content">
+                            <p>
+                                ثبت نام کنید تا اولین نفری باشید که از اخبار
+                                جدید مطلع می شوید.
+                            </p>
+                            <div class="footer-form">
+                                <input
+                                    type="email"
+                                    id="gmail"
+                                    name="gmail"
+                                    placeholder="ایمیل خود را وارد کنید..."
+                                />
+
+                                <div class="header-sign">
+                                    <a class="sign-tag sign-footer" href="#">
+                                        <i
+                                            class="fa-solid fa-user i-person"
+                                        ></i>
+                                        <span class="sign-tag-p">ثبت نام</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footrt-top-left-logo">
+                            <img
+                                src="./assets/images/footer-image (3).png"
+                                alt=""
+                            />
+
+                            <img
+                                src="./assets/images/footer-image (4).png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="footrt-bot">
+                    <div class="footrt-bot-right">
+                        <p class="footrt-bot-right-p">با ما در تماس باشید:</p>
+                        <div class="footrt-bot-right-div">
+                            <span>021 22 475 650 - 021 22 475 650</span>
+                            <img
+                                src="./assets/images/phone-in-talk.png"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <img src="./assets/images/email.png" alt="" />
+                            <span>example@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="footrt-bot-left">
+                        <img src="./assets/images/copyright.png" alt="" />
+                        <span>
+                            تمامی حقوق این سایت متعلق به شرکت البرز افراز
+                            طبرستان (درنیکا) می باشد.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./assets/javascript/swiper.js"></script>
+    </body>
+</html>

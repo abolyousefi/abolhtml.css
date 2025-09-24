@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./css/all.min.css" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/contact.css" />
+        <link rel="stylesheet" href="./css/news.css" />
+        <link rel="stylesheet" href="./css/news-detail.css" />
+    </head>
+    <body>
+        <section class="main-section">
+            <div class="header-section">
+                <header>
+                    <div class="header-container">
+                        <div class="header-sign">
+                            <a class="sign-tag" href="#">
+                                <p class="sign-tag-p">ورود / ثبت نام</p>
+                                <i class="fa-solid fa-user i-person"></i>
+                            </a>
+                        </div>
+
+                        <div class="header-links">
+                            <a class="header-link" href="./contact.html"
+                                >ارتباط باما</a
+                            >
+                            <a class="header-link" href="#"
+                                >درباره‌ <span>‌بنیاد مهربانی</span></a
+                            >
+                            <a class="header-link" href="#">آمار ها</a>
+                            <a class="header-link" href="#">نیازمندی ها</a>
+                            <a class="header-link" href="#">حمایت ها</a>
+                            <a class="header-link" href="../index.html"
+                                >صفحه اصلی</a
+                            >
+                        </div>
+
+                        <div class="header-logo">
+                            <div class="logo-text">
+                                <p class="header-p-light">
+                                    بنیاد
+                                    <span class="header-span">مهربانی</span>
+                                </p>
+                                <p class="header-p">
+                                    حساب 100 امام (ره) - بنیاد مسکن انقلاب
+                                    اسلامی
+                                </p>
+                            </div>
+                            <img
+                                class="header-logo-img"
+                                src="./images/Logo.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- نوار بالا فقط با دکمه همبرگر -->
+                        <nav class="navbar hamburger">
+                            <div class="container-fluid">
+                                <!-- آیکون همبرگر سمت چپ -->
+                                <button
+                                    class="navbar-toggler ms-auto hamburger-btn"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#menuOffcanvas"
+                                    aria-controls="menuOffcanvas"
+                                >
+                                    <!-- <span class="navbar-toggler-icon"></span> -->
+                                    <i class="fa-solid fa-bars i-hamburger"></i>
+                                </button>
+                            </div>
+                        </nav>
+
+                        <!-- منوی Offcanvas -->
+                        <div
+                            class="offcanvas offcanvas-end"
+                            tabindex="-1"
+                            id="menuOffcanvas"
+                            aria-labelledby="menuOffcanvasLabel"
+                        >
+                            <div class="offcanvas-header">
+                                <button
+                                    type="button"
+                                    class="btn-close text-reset btn-close-offcanvas"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="بستن"
+                                ></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            href="./index.html"
+                                            >صفحه اصلی</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >حمایت ها</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >نیازمندی ها</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">آمار ها</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >درباره‌
+                                            <span class="nav-yellow"
+                                                >‌بنیاد مهربانی</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="./contact.html"
+                                            >ارتباط باما</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </section>
+
+        <section class="link-section">
+            <div class="link-div">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    صفحه اصلی
+                </a>
+                <span>/</span>
+                <a href="./news.html">
+                    <i class="fa-solid fa-images"></i>
+                    اخبار
+                </a>
+                <span>/</span>
+                <a class="active-link" href="./news-detail.html">
+                    <i class="fa-solid fa-calendar"></i>
+                    جزئیات خبر
+                </a>
+            </div>
+        </section>
+
+        <section class="phone-section">
+            <div class="news-div">
+                <div class="phone-content"></div>
+            </div>
+        </section>
+
+        <section class="phone-section">
+            <div class="news-info-div">
+                <div class="recent-title"></div>
+            </div>
+        </section>
+
+        <section class="memorandums-body">
+            <div class="memorandums">
+                <img class="leaf-img2" src="./images/leaf2.png" alt="" />
+                <div class="swiper memorandums-content">
+                    <div class="memorandums-header">
+                        <div class="recent-title1">
+                            <p>نیازمندی های <span>اخیر</span></p>
+                        </div>
+                        <div class="memorandums-btn">
+                            <button class="btn btn-success btn-next">
+                                <img
+                                    src="./images/keyboard-arrow-right.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn btn-prev">
+                                <img
+                                    src="./images/keyboard-arrow-left.png"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper"></div>
+                    <div class="memorandums-bot">
+                        <div class="memorandums-btn-bot">
+                            <button class="btn btn-success btn-next">
+                                <img
+                                    src="./images/keyboard-arrow-right.png"
+                                    alt=""
+                                />
+                            </button>
+                            <button class="btn btn-prev">
+                                <img
+                                    src="./images/keyboard-arrow-left.png"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-bg">
+                <div class="footrt-top">
+                    <div class="footrt-top-right">
+                        <img
+                            class="footer-logo"
+                            src="./images/Logo-footer.png"
+                            alt=""
+                        />
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                            متون بلکه روزنامه و مجله در ستون .
+                        </p>
+                        <div>
+                            <img src="./images/footer-Icon (4).png" alt="" />
+                            <img src="./images/footer-Icon (3).png" alt="" />
+                            <img src="./images/footer-Icon (2).png" alt="" />
+                            <img src="./images/footer-Icon (1).png" alt="" />
+                        </div>
+                    </div>
+                    <div class="footrt-center">
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">بنیاد مهربانی</p>
+                            <p class="footrt-top-center-p">صفحه اصلی</p>
+                            <p class="footrt-top-center-p">
+                                <a href="./news.html">اخبار</a>
+                            </p>
+                            <p class="footrt-top-center-p">قوانین و مقررات</p>
+                            <p class="footrt-top-center-p">درباره ما</p>
+                            <p class="footrt-top-center-p">ارتباط با ما</p>
+                        </div>
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">
+                                دسترسی های سریع
+                            </p>
+                            <p class="footrt-top-center-p">حمایت های فوری</p>
+                            <p class="footrt-top-center-p">حوادث غیرمرتبطه</p>
+                            <p class="footrt-top-center-p">مشارکت های مردمی</p>
+                            <p class="footrt-top-center-p">
+                                کمک به بنیاد مهربانی
+                            </p>
+                            <p class="footrt-top-center-p">ثبت شکایت</p>
+                        </div>
+                    </div>
+                    <div class="footrt-top-left">
+                        <p class="footrt-top-center-title">به ما بپیوندید</p>
+                        <div class="footrt-top-left-content">
+                            <p>
+                                ثبت نام کنید تا اولین نفری باشید که از اخبار
+                                جدید مطلع می شوید.
+                            </p>
+                            <div class="footer-form">
+                                <input
+                                    type="email"
+                                    id="gmail"
+                                    name="gmail"
+                                    placeholder="ایمیل خود را وارد کنید..."
+                                />
+
+                                <div class="header-sign">
+                                    <a class="sign-tag sign-footer" href="#">
+                                        <i
+                                            class="fa-solid fa-user i-person"
+                                        ></i>
+                                        <span class="sign-tag-p">ثبت نام</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footrt-top-left-logo">
+                            <img src="./images/footer-image (3).png" alt="" />
+
+                            <img src="./images/footer-image (4).png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footrt-bot">
+                    <div class="footrt-bot-right">
+                        <p class="footrt-bot-right-p">با ما در تماس باشید:</p>
+                        <div class="footrt-bot-right-div">
+                            <span>021 22 475 650 - 021 22 475 650</span>
+                            <img src="./images/phone-in-talk.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/email.png" alt="" />
+                            <span>example@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="footrt-bot-left">
+                        <img src="./images/copyright.png" alt="" />
+                        <span>
+                            تمامی حقوق این سایت متعلق به شرکت البرز افراز
+                            طبرستان (درنیکا) می باشد.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./javascript/jquery.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./javascript/api-detail.js"></script>
+    </body>
+</html>

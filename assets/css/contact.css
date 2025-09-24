@@ -1,0 +1,383 @@
+:root {
+    --green-300: hsla(161, 56%, 31%, 1);
+    --green-50: hsla(160, 26%, 93%, 1);
+    --green-800: hsla(162, 56%, 14%, 1);
+    --green-100: hsla(159, 27%, 90%, 1);
+    --Yellow-300-Secondary: hsla(45, 99%, 68%, 1);
+    --Light: hsla(0, 0%, 100%, 1);
+    --border: hsla(160, 30%, 44%, 1);
+    --yellow-200: hsla(45, 100%, 90%, 1);
+    --neutral-600: hsla(0, 0%, 48%, 1);
+    --neutral-400: hsla(0, 0%, 58%, 1);
+    --neutral-700: hsla(0, 0%, 38%, 1);
+    --neutral-900: hsla(0, 0%, 22%, 1);
+    --Red-dg: hsla(7, 100%, 97%, 1);
+    --Red-border: hsla(9, 100%, 95%, 1);
+    --red: hsla(4, 60%, 48%, 1);
+}
+
+.header-section {
+    width: 1440px;
+}
+.link-section {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+.link-div {
+    width: 1440px;
+    padding-block: 16px;
+    padding-inline: 64px;
+    font-size: 16px;
+    font-weight: 700;
+    * {
+        padding-left: 8px;
+        color: var(--neutral-700);
+    }
+}
+.active-link {
+    color: var(--neutral-900);
+}
+.phone-section {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+.phone-div {
+    width: 100%;
+    height: 420px;
+
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: relative;
+}
+.phone-background {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -465px;
+    filter: brightness(60%);
+}
+.phone-content {
+    width: 600px;
+    margin-right: 64px;
+    position: relative;
+    z-index: 2;
+}
+
+.phone-p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--green-50);
+}
+.phone-img {
+    position: relative;
+    right: 120px;
+}
+.phone-img-mobile {
+    display: none;
+    position: relative;
+    right: 80px;
+}
+.phone-title {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--Light);
+    span {
+        color: var(--Yellow-300-Secondary);
+    }
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+.content-div {
+    margin: 0;
+    width: 1440px;
+    padding: 64px;
+    display: flex;
+
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.content-section-card {
+    padding: 0;
+}
+
+.content-div-right {
+    /* border: 1px solid black; */
+    margin-left: 80px;
+}
+
+.content-div-right-title {
+    width: 592px;
+    padding-bottom: 40px;
+    color: var(--neutral-600);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+.content-div-right-bot {
+    direction: ltr;
+    margin: 0;
+}
+.column-p {
+    padding: 0;
+    margin-bottom: 32px;
+}
+.contact-content-right-card {
+    direction: rtl;
+    /* border: 1px solid black; */
+    font-weight: 500;
+    i {
+        font-size: 24px;
+        color: var(--green-300);
+    }
+    p {
+        /* direction: ltr; */
+        font-size: 14px;
+        color: var(--neutral-900);
+
+        padding-top: 8px;
+        margin: 0;
+    }
+}
+.contact-content-right-card-p {
+    padding-top: 12px;
+    font-size: 20px;
+    color: black;
+}
+
+.content-div-left {
+    background-color: var(--Light);
+    border: 1px solid var(--green-100);
+    border-radius: 12px;
+    padding-inline: 48px;
+    padding-block: 32px;
+    div {
+        padding-bottom: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    }
+    button {
+        font-size: 14px;
+        font-weight: 500;
+        margin-inline: auto;
+        background-color: var(--Yellow-300-Secondary);
+        color: var(--green-800);
+    }
+    input[name="name"] {
+        padding: 12px 35px 12px 16px;
+        background-image: url("../images/Vector-name.png");
+        background-color: #fff;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+    }
+    input[name="phone"] {
+        padding: 12px 35px 12px 16px;
+        background-image: url("../images/Vector-phone.png");
+        background-color: #fff;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+    }
+    textarea[name="message"] {
+        padding: 12px 35px 12px 16px;
+        background-image: url("../images/Vector-message.png");
+        background-color: #fff;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: right 8px top 12px;
+    }
+}
+
+.map-section {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+.map-div {
+    width: 1440px;
+    padding: 64px;
+    padding-bottom: 128px;
+}
+#map-container {
+    height: 400px;
+    border-radius: 12px;
+}
+@media (max-width: 1300px) {
+    .phone-background {
+        top: -390px;
+    }
+    .content-div-right-title {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .link-div {
+        padding-inline: 32px;
+    }
+    .phone-background {
+        top: -340px;
+    }
+    .phone-content {
+        margin-right: 32px;
+    }
+    .content-div {
+        padding-inline: 32px;
+    }
+    .content-div-right {
+        margin-left: 40px;
+    }
+    .content-div-left {
+        padding-inline: 32px;
+        padding-block: 24px;
+    }
+    .map-div {
+        padding: 64px 32px 96px 32px;
+    }
+}
+@media (max-width: 1100px) {
+    .phone-background {
+        top: -290px;
+    }
+}
+/* بین 992px تا 768px (lg → md) */
+@media (max-width: 992px) {
+    .link-div {
+        padding-inline: 16px;
+    }
+    .phone-background {
+        bottom: 70px;
+    }
+    .phone-content {
+        margin-right: 16px;
+    }
+    .phone-background {
+        top: -210px;
+    }
+    .content-div {
+        padding-block: 32px;
+        padding-inline: 16px;
+    }
+    .content-div-right {
+        margin-left: 20px;
+    }
+    .content-div-right-title {
+        padding-bottom: 24px;
+    }
+    #map-container {
+        height: 300px;
+    }
+    .map-div {
+        padding: 32px 16px 48px 16px;
+    }
+}
+@media (max-width: 850px) {
+    .phone-background {
+        top: -150px;
+    }
+}
+/* بین 768px تا 576px (md → sm) */
+@media (max-width: 768px) {
+    .phone-div {
+        height: 240px;
+    }
+    .phone-content {
+        width: 328px;
+    }
+    .phone-p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .phone-img {
+        display: none;
+    }
+    .phone-img-mobile {
+        display: block;
+    }
+    .phone-title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .phone-background {
+        top: -220px;
+    }
+    .content-div {
+        padding-block: 24px;
+    }
+    .content-div-right {
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+    .content-div-right-title {
+        font-size: 14px;
+    }
+    .contact-content-right-card {
+        display: flex;
+        gap: 8px;
+        i {
+            font-size: 20px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    .contact-content-right-card-p {
+        padding-top: 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .column-p {
+        margin-bottom: 20px;
+    }
+    #map-container {
+        height: 200px;
+    }
+    .map-div {
+        padding: 24px 16px 48px 16px;
+    }
+}
+@media (max-width: 700px) {
+    .phone-background {
+        top: -150px;
+    }
+}
+@media (max-width: 600px) {
+    .phone-background {
+        top: -110px;
+    }
+}
+/* زیر 576px (sm → xs) */
+@media (max-width: 576px) {
+    .phone-background {
+        top: -85px;
+    }
+    .content-div-left {
+        padding-inline: 24px;
+        padding-block: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .phone-background {
+        top: -50px;
+    }
+}
+@media (max-width: 450px) {
+    .phone-background {
+        top: -20px;
+    }
+}
+@media (max-width: 400px) {
+    .phone-background {
+        top: 0px;
+    }
+}

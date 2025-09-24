@@ -1,0 +1,96 @@
+:root {
+    --green-300: hsla(161, 56%, 31%, 1);
+    --green-50: hsla(160, 26%, 93%, 1);
+    --green-800: hsla(162, 56%, 14%, 1);
+    --green-900: hsla(161, 57%, 11%, 1);
+    --green-100: hsla(159, 27%, 90%, 1);
+    --Yellow-300-Secondary: hsla(45, 99%, 68%, 1);
+    --Light: hsla(0, 0%, 100%, 1);
+    --border: hsla(160, 30%, 44%, 1);
+    --yellow-200: hsla(45, 100%, 90%, 1);
+    --neutral-600: hsla(0, 0%, 48%, 1);
+    --neutral-400: hsla(0, 0%, 58%, 1);
+    --neutral-700: hsla(0, 0%, 38%, 1);
+    --neutral-900: hsla(0, 0%, 22%, 1);
+    --Red-dg: hsla(7, 100%, 97%, 1);
+    --Red-border: hsla(9, 100%, 95%, 1);
+    --red: hsla(4, 60%, 48%, 1);
+}
+.news-div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/news-info.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -480px;
+    filter: brightness(40%);
+    z-index: 1;
+}
+.news-info-div {
+    width: 1440px;
+    padding: 64px;
+}
+
+.swiper-slid-news {
+    width: 350px;
+    height: 550px;
+    direction: rtl;
+}
+
+@media (max-width: 1300px) {
+    .news-div::after {
+        background-position: center -380px;
+    }
+}
+@media (max-width: 1100px) {
+    .news-div::after {
+        background-position: center -280px;
+    }
+}
+/* بین 992px تا 768px (lg → md) */
+@media (max-width: 992px) {
+    .news-div::after {
+        background-position: center -200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .news-div::after {
+        background-position: center -160px;
+    }
+}
+/* بین 768px تا 576px (md → sm) */
+@media (max-width: 768px) {
+    .news-div::after {
+        background-position: center -190px;
+    }
+    .phone-title {
+        span {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .news-div::after {
+        background-position: center -140px;
+    }
+}
+/* زیر 576px (sm → xs) */
+@media (max-width: 576px) {
+    .news-div::after {
+        background-position: center -90px;
+    }
+}
+@media (max-width: 500px) {
+    .news-div::after {
+        background-position: center -50px;
+    }
+}
+@media (max-width: 450px) {
+    .news-div::after {
+        background-position: center 0px;
+    }
+}
